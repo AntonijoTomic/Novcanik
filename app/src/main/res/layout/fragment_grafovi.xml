@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Grafovi">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:padding="16dp"
+       >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/stisni"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="PRITISNI ZA PONOVNI ODABIR"
+            android:layout_marginLeft="100dp"
+            >
+        </TextView>
+
+    </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:id="@+id/hide2">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="17dp"
+               android:text="Odaberite razdoblje za prikaz statistike: "
+               android:textSize="16sp"
+               android:textStyle="bold">
+           </TextView>
+
+           <ImageView
+               android:id="@+id/raspondatum"
+               android:layout_width="51dp"
+               android:layout_height="49dp"
+               android:layout_marginLeft="10dp"
+               android:src="@drawable/ic_baseline_date_range_24"></ImageView>
+       </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/hide1"
+    >
+       <RadioGroup
+           android:id="@+id/rgroup"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginLeft="100dp"
+           >
+           <RadioButton
+               android:id="@+id/radioPrihod"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:text="Prihod"></RadioButton>
+
+           <RadioButton
+               android:id="@+id/radipPotrosnja"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:text="Potrošnja"></RadioButton>
+       </RadioGroup>
+
+</LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:id="@+id/hide3">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="16sp"
+                   android:textStyle="bold"
+                   android:layout_marginTop="70dp"
+                   android:id="@+id/najvise"
+                   android:text="U odabranom razdoblju najviše ste potrošili na:">
+               </TextView>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="16sp"
+                   android:textStyle="bold"
+                   android:layout_marginLeft="10dp"
+                   android:id="@+id/najvise_na"
+                   android:layout_marginTop="10dp"
+                  >
+
+               </TextView>
+
+               <TextView
+                   android:id="@+id/najmanje"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="16sp"
+                   android:textStyle="bold"
+                   android:layout_marginTop="10dp"
+                   android:text="U odabranom razdoblju najmanje ste potrošili na:">
+               </TextView>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="16sp"
+                   android:textStyle="bold"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:id="@+id/najmanje_na">
+               </TextView>
+
+
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="30dp"
+                   android:layout_marginLeft="100dp"
+                   android:id="@+id/prikazikao"
+                   android:text="Prikazi kao graf">
+               </Button>
+           </LinearLayout>
+       </LinearLayout>
+
+    <com.github.mikephil.charting.charts.BarChart
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/bar_chart"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp">
+    </com.github.mikephil.charting.charts.BarChart>
+       <com.github.mikephil.charting.charts.PieChart
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="1"
+           android:id="@+id/pie_chart"
+           android:layout_margin="8dp">
+       </com.github.mikephil.charting.charts.PieChart>
+   </LinearLayout>
+
+</FrameLayout>

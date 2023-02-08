@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "456303640221",
+    "project_id": "novcanik-a3abd",
+    "storage_bucket": "novcanik-a3abd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:456303640221:android:980d3b538e9a93e5b29e74",
+        "android_client_info": {
+          "package_name": "com.example.novcanik"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "456303640221-kft6ovc0l0t6aonsdra157i7nk5im3ti.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuDLiBLzzNE9yEgcYVgzWBrYWIBe9yfFU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "456303640221-kft6ovc0l0t6aonsdra157i7nk5im3ti.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

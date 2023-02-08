@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item android:title="Početna"
+            android:icon="@drawable/ic_home_24"
+            android:id="@+id/home"
+            />
+    <item android:title="Transakcije"
+        android:icon="@drawable/ic_baseline_list_24"
+        android:id="@+id/transakcije"
+        />
+    <item android:title="Statistika"
+        android:icon="@drawable/ic_baseline_bar_chart_24"
+        android:id="@+id/statistika"
+        />
+    <item android:title="Odjava"   android:icon="@drawable/ic_baseline_logout_24" android:id="@+id/odjava"/>
+</menu>
